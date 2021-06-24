@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="nenriki" />
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://unpkg.com/tabulator-tables@4.9.3/dist/css/tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.9.3/dist/js/tabulator.min.js"></script>
+    <script type="text/javascript" src="js4.js"></script>
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>
+        nenriki
+    </title>
+
+
+
+
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#nav-1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">JavaScript</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="nav-1">
+            <ul class="nav navbar-nav">
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Tutorials</a></li>
+                <li><a href="form.html">Forms</a></li>
+            </ul>
+
+            <ul class="navbar-form navbar-right">
+                <li><form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search" />
+                    </div>
+                    <button class="btn btn-success" type="button">Search <span class="glyphicon glyphicon-search"></span></button>
+                </form>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-envelope"></span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-globe"></span></a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="first" class="container">
+
+    <h1 id="about">Tutorials</h1>
+    <br />
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#link1" data-toggle="tab">Resolution</a></li>
+        <li><a href="#link2" data-toggle="tab">Popup</a></li>
+        <li><a href="#link3" data-toggle="tab">Collapsible</a></li>
+        <li><a href="#link4" data-toggle="tab">Dropdown</a></li>
+        <li><a href="#link5" data-toggle="tab">Table</a></li>
+        <li><a href="#link6" data-toggle="tab">JSON</a></li>
+    </ul>
+
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="link1">
+            <h1>Resolution</h1>
+            <p>Display resolution</p>
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="#modal-link-1" data-toggle="modal">
+                        <img id="img1" src="https://lh3.googleusercontent.com/proxy/P0FNYXiF9ZJhJZ_suP_SfdKg7EcxFAiPAEzS9kXgcE2uTTEusOvumnBtSMC6FzMmEVd5QW75RgJb9WOdEVCdi6tWN1hPs1LENq7J8fTWVmihkQ0BbdD2x-4L5mkjOg" />
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#modal-link-2" data-toggle="modal">
+                        <img id="img1" src="https://lh3.googleusercontent.com/proxy/P0FNYXiF9ZJhJZ_suP_SfdKg7EcxFAiPAEzS9kXgcE2uTTEusOvumnBtSMC6FzMmEVd5QW75RgJb9WOdEVCdi6tWN1hPs1LENq7J8fTWVmihkQ0BbdD2x-4L5mkjOg" />
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="#modal-link-1" data-toggle="modal">
+                        <img id="img1" src="https://lh3.googleusercontent.com/proxy/P0FNYXiF9ZJhJZ_suP_SfdKg7EcxFAiPAEzS9kXgcE2uTTEusOvumnBtSMC6FzMmEVd5QW75RgJb9WOdEVCdi6tWN1hPs1LENq7J8fTWVmihkQ0BbdD2x-4L5mkjOg" />
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#modal-link-2" data-toggle="modal">
+                        <img id="img1" src="https://lh3.googleusercontent.com/proxy/P0FNYXiF9ZJhJZ_suP_SfdKg7EcxFAiPAEzS9kXgcE2uTTEusOvumnBtSMC6FzMmEVd5QW75RgJb9WOdEVCdi6tWN1hPs1LENq7J8fTWVmihkQ0BbdD2x-4L5mkjOg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="link2">
+            <h1>Popup</h1>
+            <p>Learn how to create popups </p>
+            <div style="text-align:center">
+                <div class="popup" onclick="myFunction()">Click me to toggle the popup!
+                    <span class="popuptext" id="myPopup">A Simple Popup!</span>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="link3">
+            <h1>Collapsible</h1>
+            <p>A Collapsible:</p>
+            <button type="button" class="collapsible">Open Collapsible</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <p>Collapsible Set:</p>
+            <button type="button" class="collapsible">Open Section 1</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button type="button" class="collapsible">Open Section 2</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button type="button" class="collapsible">Open Section 3</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        <div class="tab-pane" id="link4">
+            <h2>Clickable Dropdown</h2>
+            <p>Click on the button to open the dropdown menu.</p>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="link5">
+            <h2>Table 1</h2>
+            <div id="root"> </div>
+            <h2>Table 2</h2>
+            <div id="example-table"></div>
+            <script type="text/javascript">
+            var tabledata = [
+            {id:1, name:"Oli Bob", progress:12, gender:"male", rating:1, col:"red", dob:"19/02/1984", car:1},
+            {id:2, name:"Mary May", progress:1, gender:"female", rating:2, col:"blue", dob:"14/05/1982", car:true},
+            {id:3, name:"Christine Lobowski", progress:42, gender:"female", rating:0, col:"green", dob:"22/05/1982", car:"true"},
+            {id:4, name:"Brendon Philips", progress:100, gender:"male", rating:1, col:"orange", dob:"01/08/1980"},
+            {id:5, name:"Margret Marmajuke", progress:16, gender:"female", rating:5, col:"yellow", dob:"31/01/1999"},
+            {id:6, name:"Frank Harbours", progress:38, gender:"male", rating:4, col:"red", dob:"12/05/1966", car:1},
+            ];
+
+            //initialize table
+            var table = new Tabulator("#example-table", {
+                data:tabledata,           //load row data from array
+                layout:"fitColumns",      //fit columns to width of table
+                responsiveLayout:"hide",  //hide columns that dont fit on the table
+                tooltips:true,            //show tool tips on cells
+                addRowPos:"top",          //when adding a new row, add it to the top of the table
+                history:true,             //allow undo and redo actions on the table
+                pagination:"local",       //paginate the data
+                paginationSize:7,         //allow 7 rows per page of data
+                movableColumns:true,      //allow column order to be changed
+                resizableRows:true,       //allow row order to be changed
+                initialSort:[             //set the initial sort order of the data
+                    {column:"name", dir:"asc"},
+                ],
+                columns:[                 //define the table columns
+                    {title:"Name", field:"name", editor:"input"},
+                    {title:"Task Progress", field:"progress", hozAlign:"left", formatter:"progress", editor:true},
+                    {title:"Gender", field:"gender", width:95, editor:"select", editorParams:{values:["male", "female"]}},
+                    {title:"Rating", field:"rating", formatter:"star", hozAlign:"center", width:100, editor:true},
+                    {title:"Color", field:"col", width:130, editor:"input"},
+                    {title:"Date Of Birth", field:"dob", width:130, sorter:"date", hozAlign:"center"},
+                    {title:"Driver", field:"car", width:90,  hozAlign:"center", formatter:"tickCross", sorter:"boolean", editor:true},
+                ],
+            });
+            </script>
+            <h2>Table 3</h2>
+            <div id="wrapper">
+                <table align='left' cellspacing=2 cellpadding=5 id="data_table" border=1>
+                    <tr>
+                        <th>Name</th>
+                        <th>Major</th>
+                        <th>Group</th>
+                    </tr>
+
+                    <tr id="row1">
+                        <td id="name_row1">Arailym</td>
+                        <td id="major_row1">BD</td>
+                        <td id="group_row1">2002</td>
+                        <td>
+                            <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+                            <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+                            <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+                        </td>
+                    </tr>
+
+                    <tr id="row2">
+                        <td id="name_row2">Zassulan</td>
+                        <td id="major_row2">CS</td>
+                        <td id="group_row2">2001</td>
+                        <td>
+                            <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+                            <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+                            <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+                        </td>
+                    </tr>
+
+                    <tr id="row3">
+                        <td id="name_row3">Rakhat</td>
+                        <td id="major_row3">IT</td>
+                        <td id="group_row3">1965</td>
+                        <td>
+                            <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+                            <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+                            <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" id="new_name"></td>
+                        <td><input type="text" id="new_major"></td>
+                        <td><input type="text" id="new_group"></td>
+                        <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+
+            <div class="tab-pane" id="link6">
+            <h2>Json Placeholder</h2>
+            <p>Server responds with JSON array</p>
+                <div class="container my-5">
+                    <label>Select source</label>
+                    <select class="form-control" id="source">
+                        <option value="posts" selected>posts</option>
+                        <option value="comments">comments</option>
+                        <option value="albums">albums</option>
+                        <option value="photos" >photos</option>
+                        <option value="todos">todos</option>
+                        <option value="users">users</option>
+                    </select>
+                    <input type="number" min="0" max="5000" id="itemId" class="form-control mt-3" placeholder="Item ID:">
+                    <button class="btn btn-primary mt-3" id="searchBtn">Search</button>
+                    <div class="mt-4" id="result">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MODAL in LINK TABS-->
+    <div class="modal" id="modal-link-1">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p>The picture in full res</p>
+                    <button class="close" type="button" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: center">
+                    <img id="img2" src="https://lh3.googleusercontent.com/proxy/P0FNYXiF9ZJhJZ_suP_SfdKg7EcxFAiPAEzS9kXgcE2uTTEusOvumnBtSMC6FzMmEVd5QW75RgJb9WOdEVCdi6tWN1hPs1LENq7J8fTWVmihkQ0BbdD2x-4L5mkjOg" />
+                </div>
+                <div class="modal-footer">
+                    This is the footer
+                    <button class="btn btn-default" data-dismiss="modal" type="button">
+                        Close
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal" id="modal-link-2">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p>The picture in full res</p>
+                    <button class="close" type="button" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align: center;">
+                    <img id="img3" src="https://lh3.googleusercontent.com/proxy/P0FNYXiF9ZJhJZ_suP_SfdKg7EcxFAiPAEzS9kXgcE2uTTEusOvumnBtSMC6FzMmEVd5QW75RgJb9WOdEVCdi6tWN1hPs1LENq7J8fTWVmihkQ0BbdD2x-4L5mkjOg" />
+                </div>
+                <div class="modal-footer">
+                    This is the footer
+                    <button class="btn btn-default" data-dismiss="modal" type="button">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="row row-eq-height">
+                <div class="col-8 col-sm-7 col-md-9 col-lg-3 ">
+                    <div class="footer__item"><a class="consult_logo" href="#"><img src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png" width="220px"/></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 offset-0 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-1 ">
+                    <div class="footer__item">
+
+                        <!-- widget-text__widget -->
+                        <section class="widget-text__widget widget">
+                            <div class="widget-text__content">
+                                <ul>
+                                    <li><a href="#">Term of Services </a></li>
+                                    <li><a href="#">Privacy Policy </a></li>
+                                    <li><a href="#">Sitemap </a></li>
+                                    <li><a href="#">Help</a></li>
+                                </ul>
+                            </div>
+                        </section><!-- End / widget-text__widget -->
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 ">
+                    <div class="footer__item">
+
+                        <!-- widget-text__widget -->
+                        <section class="widget-text__widget widget">
+                            <div class="widget-text__content">
+                                <ul>
+                                    <li><a href="#">How It Work </a></li>
+                                    <li><a href="#">Carrier </a></li>
+                                    <li><a href="#">Pricing </a></li>
+                                    <li><a href="#">Support</a></li>
+                                </ul>
+                            </div>
+                        </section><!-- End / widget-text__widget -->
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 col-xl-2 ">
+                    <div class="footer__item">
+
+                        <!-- form-sub -->
+                        <div class="form-sub">
+                            <h4 class="form-sub__title">Our Newsletter</h4>
+                            <form class="form-sub__form">
+                                <div class="form-item">
+                                    <input class="form-control" type="email" placeholder="Enter Your Email Address..."/>
+                                </div>
+                                <div class="form-submit">
+                                    <button class="form-button" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                                </div>
+                            </form>
+                        </div><!-- End / form-sub -->
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2  consult_backToTop">
+                    <div class="footer__item"><a href="#" id="back-to-top"> <i class="fa fa-angle-up" aria-hidden="true"> </i><span>Back To Top</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">2021 &copy; nenriki</div>
+    </footer><!-- End / footer -->
+    <hr />
+<script src = "js4.js"></script>
+<script defer src="json-placeholder.js"></script>
+<script defer src="interactive.js"></script>
+</div>
+</body>
+</html>
